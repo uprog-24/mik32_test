@@ -1,0 +1,46 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "Debug",
+      "type": "cortex-debug",
+      "request": "launch",
+      "servertype": "openocd",
+      "cwd": "${workspaceRoot}/build/Debug",
+      "executable": "${config:projectName}.elf",
+      "device": "STM32F103xB",
+      "interface": "swd",
+      "configFiles": [
+        "C:/Users/User/.platformio/packages/tool-mik32-uploader/openocd-scripts/interface/start-link.cfg",
+        "C:/Users/User/.platformio/packages/tool-mik32-uploader/openocd-scripts/target/mik32.cfg"
+      ],
+      "preLaunchTask": "BuildDebug",
+      "runToEntryPoint": "main",
+      "showDevDebugOutput": "raw"
+    },
+
+    {
+      "name": "Debug MIK32",
+      "type": "cppdbg",
+      "request": "launch",
+      "miDebuggerPath": "T:/xpack-riscv-none-elf-gcc-14.2.0-3/bin/riscv-none-elf-gdb.exe",
+      "program": "${workspaceFolder}/build/Debug/${workspaceFolderBasename}.elf",
+      "cwd": "${workspaceFolder}",
+      //   "externalConsole": false,
+      "MIMode": "gdb",
+      //   "targetArchitecture": "riscv32",
+      "miDebuggerServerAddress": "localhost:3333",
+      "setupCommands": [
+        { "text": "set mem inaccessible-by-default on" },
+        { "text": "mem 0x00040000 0x00090000 rw" },
+        { "text": "mem 0x02000000 0x02004000 rw" },
+        { "text": "mem 0x01000000 0x01002000 ro" },
+        { "text": "mem 0x80000000 0xffffffff ro" },
+        { "text": "set arch riscv:rv32" },
+        { "text": "set remotetimeout 10" },
+        { "text": "set remote hardware-breakpoint-limit 2" }
+      ],
+      "preLaunchTask": "Launch OpenOCD MIK32"
+    }
+  ]
+}

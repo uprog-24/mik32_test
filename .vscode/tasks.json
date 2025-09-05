@@ -1,0 +1,180 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      // Конфигурация типа сборки Debug
+      "label": "ConfigureDebug",
+      "group": "build",
+      "type": "shell",
+      "hide": true,
+      "command": "cmake --preset Debug",
+      "options": {
+        "cwd": "${workspaceFolder}"
+      }
+    },
+
+    {
+      // Сборка проекта в режиме Debug
+      "label": "BuildDebug",
+      "group": "build",
+      "type": "shell",
+      "hide": false,
+      "dependsOn": "ConfigureDebug",
+      "command": "cmake --build --preset Debug",
+      "options": {
+        "cwd": "${workspaceFolder}",
+        "statusbar": {
+          "color": "#ebaeed",
+          "label": "$(debug-console-view-icon) DebugBuild",
+          "detail": "do Debug build"
+        }
+      }
+    },
+
+    {
+      // Конфигурация типа сборки Release
+      "label": "ConfigureRelease",
+      "group": "build",
+      "type": "shell",
+      "hide": true,
+      "command": "cmake --preset Release",
+      "options": {
+        "cwd": "${workspaceFolder}"
+      }
+    },
+
+    {
+      // Сборка проекта в режиме Release
+      "label": "BuildRelease",
+      "group": "build",
+      "type": "shell",
+      "hide": false,
+      "dependsOn": "ConfigureRelease",
+      "command": "cmake --build --preset Release",
+      "options": {
+        "cwd": "${workspaceFolder}",
+        "statusbar": {
+          "color": "#8bff8b",
+          "label": "$(pass-filled) ReleaseBuild",
+          "detail": "do Release build"
+        }
+      }
+    },
+
+    {
+      // Прошивка устройства
+      "label": "FlashDevice",
+      "type": "shell",
+      "command": "C:/Users/User/AppData/Local/Programs/Python/Python313/python.exe",
+      "args": [
+        "C:/Users/User/.platformio/packages/tool-mik32-uploader/mik32_upload.py",
+        "build/${config:projectName}.hex",
+        "--run-openocd",
+        "--openocd-exec=C:/Users/User/.platformio/packages/tool-openocd/bin/openocd.exe",
+        "--openocd-interface=C:/Users/User/.platformio/packages/tool-mik32-uploader/openocd-scripts/interface/start-link.cfg",
+        "--openocd-target=C:/Users/User/.platformio/packages/tool-mik32-uploader/openocd-scripts/target/mik32.cfg",
+        "--adapter-speed=3200"
+      ],
+      "options": {
+        "cwd": "${workspaceFolder}",
+        "statusbar": {
+          "color": "#87c3da",
+          "label": "$(pass-filled) FlashDevice",
+          "detail": "Download binary file"
+        }
+      },
+      "problemMatcher": []
+    },
+
+    {
+      "label": "Launch OpenOCD MIK32",
+      "type": "shell",
+      "command": "openocd",
+      "args": [
+        "-s",
+        "C:/Users/User/.platformio/packages/tool-mik32-uploader/openocd-scripts",
+        "-f",
+        "C:/Users/User/.platformio/packages/tool-mik32-uploader/openocd-scripts/interface/start-link.cfg",
+        "-f",
+        "C:/Users/User/.platformio/packages/tool-mik32-uploader/openocd-scripts/target/mik32.cfg",
+        "-c",
+        "init; halt"
+      ],
+      "problemMatcher": {
+        "owner": "custom",
+        "pattern": [
+          {
+            "regexp": ".",
+            "file": 1,
+            "location": 2,
+            "message": 3
+          }
+        ],
+        "background": {
+          "activeOnStart": true,
+          "beginsPattern": "Info : Listening on port 3333 for gdb connections",
+          "endsPattern": "(((READY)))"
+        }
+      },
+      "isBackground": true,
+      "presentation": {
+        "echo": true,
+        "reveal": "always",
+        "focus": false,
+        "panel": "new"
+      }
+    },
+
+    // {
+    // // Сброс устройства
+    //   "label": "ResetDevice",
+    //   "type": "shell",
+    //   "command": "python",
+    //   "args": [
+    //     "C:/Users/User/.platformio/packages/tool-mik32-uploader/reset_flash.py"
+    //   ],
+    //   "group": "build",
+    //   "presentation": {
+    //     "echo": true,
+    //     "reveal": "always",
+    //     "panel": "shared"
+    //   },
+    //   "problemMatcher": []
+    // },
+
+    // {
+    //   // Очистка флеш-памяти
+    //   "label": "EraseFlash",
+    //   "type": "shell",
+    //   "command": "python",
+    //   "args": [
+    //     "C:/Users/User/.platformio/packages/tool-mik32-uploader/erase_flash.py"
+    //   ],
+    //   "group": "build",
+    //   "presentation": {
+    //     "echo": true,
+    //     "reveal": "always",
+    //     "panel": "shared"
+    //   },
+    //   "problemMatcher": []
+    // },
+
+    {
+      // Удаление папки сборки build
+      "label": "Clean",
+      "group": "build",
+      "type": "shell",
+      "command": "rm -rf build",
+      "windows": {
+        "command": "rm build -Recurse -Force"
+      },
+      "options": {
+        "statusbar": {
+          "color": "#ff8b8b",
+          "label": "$(clear-all) Clean",
+          "detail": "Clean ALL"
+        }
+      }
+    }
+  ]
+}

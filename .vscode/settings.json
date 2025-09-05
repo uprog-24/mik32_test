@@ -1,0 +1,10 @@
+{
+  "projectName": "mik_build",
+  "files.associations": {
+    "mik32_hal_pcc.h": "c",
+    "mik32_hal_timer16.h": "c",
+    "timer16.h": "c"
+  },
+  "python-envs.defaultEnvManager": "ms-python.python:system",
+  "python-envs.pythonProjects": []
+}

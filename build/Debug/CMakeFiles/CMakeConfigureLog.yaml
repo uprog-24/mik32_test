@@ -1,0 +1,206 @@
+
+---
+events:
+  -
+    kind: "message-v1"
+    backtrace:
+      - "C:/ST/STM32CubeCLT_1.16.0/CMake/share/cmake-3.28/Modules/CMakeDetermineSystem.cmake:228 (message)"
+      - "CMakeLists.txt:2 (project)"
+    message: |
+      The target system is: Generic -  - riscv
+      The host system is: Windows - 10.0.19045 - AMD64
+  -
+    kind: "message-v1"
+    backtrace:
+      - "C:/ST/STM32CubeCLT_1.16.0/CMake/share/cmake-3.28/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "C:/ST/STM32CubeCLT_1.16.0/CMake/share/cmake-3.28/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "C:/ST/STM32CubeCLT_1.16.0/CMake/share/cmake-3.28/Modules/CMakeDetermineCCompiler.cmake:123 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:2 (project)"
+    message: |
+      Compiling the C compiler identification source file "CMakeCCompilerId.c" failed.
+      Compiler: T:/Downloads/xpack-riscv-none-elf-gcc-14.2.0-3-win32-x64/xpack-riscv-none-elf-gcc-14.2.0-3/bin/riscv-none-elf-gcc.exe 
+      Build flags: 
+      Id flags:  
+      
+      The output was:
+      1
+      T:/Downloads/xpack-riscv-none-elf-gcc-14.2.0-3-win32-x64/xpack-riscv-none-elf-gcc-14.2.0-3/bin/../lib/gcc/riscv-none-elf/14.2.0/../../../../riscv-none-elf/bin/ld.exe: T:/Downloads/xpack-riscv-none-elf-gcc-14.2.0-3-win32-x64/xpack-riscv-none-elf-gcc-14.2.0-3/bin/../lib/gcc/riscv-none-elf/14.2.0/../../../../riscv-none-elf/lib/crt0.o: in function `start_loop_delay':
+      (.text+0xc): undefined reference to `__C_STACK_TOP__'
+      T:/Downloads/xpack-riscv-none-elf-gcc-14.2.0-3-win32-x64/xpack-riscv-none-elf-gcc-14.2.0-3/bin/../lib/gcc/riscv-none-elf/14.2.0/../../../../riscv-none-elf/bin/ld.exe: (.text+0x10): undefined reference to `__C_STACK_TOP__'
+      T:/Downloads/xpack-riscv-none-elf-gcc-14.2.0-3-win32-x64/xpack-riscv-none-elf-gcc-14.2.0-3/bin/../lib/gcc/riscv-none-elf/14.2.0/../../../../riscv-none-elf/bin/ld.exe: (.text+0x1c): undefined reference to `__DATA_IMAGE_START__'
+      T:/Downloads/xpack-riscv-none-elf-gcc-14.2.0-3-win32-x64/xpack-riscv-none-elf-gcc-14.2.0-3/bin/../lib/gcc/riscv-none-elf/14.2.0/../../../../riscv-none-elf/bin/ld.exe: (.text+0x20): undefined reference to `__DATA_IMAGE_START__'
+      T:/Downloads/xpack-riscv-none-elf-gcc-14.2.0-3-win32-x64/xpack-riscv-none-elf-gcc-14.2.0-3/bin/../lib/gcc/riscv-none-elf/14.2.0/../../../../riscv-none-elf/bin/ld.exe: (.text+0x24): undefined reference to `__DATA_IMAGE_END__'
+      T:/Downloads/xpack-riscv-none-elf-gcc-14.2.0-3-win32-x64/xpack-riscv-none-elf-gcc-14.2.0-3/bin/../lib/gcc/riscv-none-elf/14.2.0/../../../../riscv-none-elf/bin/ld.exe: (.text+0x28): undefined reference to `__DATA_IMAGE_END__'
+      T:/Downloads/xpack-riscv-none-elf-gcc-14.2.0-3-win32-x64/xpack-riscv-none-elf-gcc-14.2.0-3/bin/../lib/gcc/riscv-none-elf/14.2.0/../../../../riscv-none-elf/bin/ld.exe: (.text+0x2c): undefined reference to `__DATA_START__'
+      T:/Downloads/xpack-riscv-none-elf-gcc-14.2.0-3-win32-x64/xpack-riscv-none-elf-gcc-14.2.0-3/bin/../lib/gcc/riscv-none-elf/14.2.0/../../../../riscv-none-elf/bin/ld.exe: (.text+0x30): undefined reference to `__DATA_START__'
+      T:/Downloads/xpack-riscv-none-elf-gcc-14.2.0-3-win32-x64/xpack-riscv-none-elf-gcc-14.2.0-3/bin/../lib/gcc/riscv-none-elf/14.2.0/../../../../riscv-none-elf/bin/ld.exe: (.text+0x46): undefined reference to `__RAM_TEXT_IMAGE_START__'
+      T:/Downloads/xpack-riscv-none-elf-gcc-14.2.0-3-win32-x64/xpack-riscv-none-elf-gcc-14.2.0-3/bin/../lib/gcc/riscv-none-elf/14.2.0/../../../../riscv-none-elf/bin/ld.exe: (.text+0x4a): undefined reference to `__RAM_TEXT_IMAGE_START__'
+      T:/Downloads/xpack-riscv-none-elf-gcc-14.2.0-3-win32-x64/xpack-riscv-none-elf-gcc-14.2.0-3/bin/../lib/gcc/riscv-none-elf/14.2.0/../../../../riscv-none-elf/bin/ld.exe: (.text+0x4e): undefined reference to `__RAM_TEXT_IMAGE_END__'
+      T:/Downloads/xpack-riscv-none-elf-gcc-14.2.0-3-win32-x64/xpack-riscv-none-elf-gcc-14.2.0-3/bin/../lib/gcc/riscv-none-elf/14.2.0/../../../../riscv-none-elf/bin/ld.exe: (.text+0x52): undefined reference to `__RAM_TEXT_IMAGE_END__'
+      T:/Downloads/xpack-riscv-none-elf-gcc-14.2.0-3-win32-x64/xpack-riscv-none-elf-gcc-14.2.0-3/bin/../lib/gcc/riscv-none-elf/14.2.0/../../../../riscv-none-elf/bin/ld.exe: (.text+0x56): undefined reference to `__RAM_TEXT_START__'
+      T:/Downloads/xpack-riscv-none-elf-gcc-14.2.0-3-win32-x64/xpack-riscv-none-elf-gcc-14.2.0-3/bin/../lib/gcc/riscv-none-elf/14.2.0/../../../../riscv-none-elf/bin/ld.exe: (.text+0x5a): undefined reference to `__RAM_TEXT_START__'
+      T:/Downloads/xpack-riscv-none-elf-gcc-14.2.0-3-win32-x64/xpack-riscv-none-elf-gcc-14.2.0-3/bin/../lib/gcc/riscv-none-elf/14.2.0/../../../../riscv-none-elf/bin/ld.exe: (.text+0x70): undefined reference to `__SBSS_START__'
+      T:/Downloads/xpack-riscv-none-elf-gcc-14.2.0-3-win32-x64/xpack-riscv-none-elf-gcc-14.2.0-3/bin/../lib/gcc/riscv-none-elf/14.2.0/../../../../riscv-none-elf/bin/ld.exe: (.text+0x74): undefined reference to `__SBSS_START__'
+      T:/Downloads/xpack-riscv-none-elf-gcc-14.2.0-3-win32-x64/xpack-riscv-none-elf-gcc-14.2.0-3/bin/../lib/gcc/riscv-none-elf/14.2.0/../../../../riscv-none-elf/bin/ld.exe: (.text+0x8c): undefined reference to `__TRAP_TEXT_START__'
+      T:/Downloads/xpack-riscv-none-elf-gcc-14.2.0-3-win32-x64/xpack-riscv-none-elf-gcc-14.2.0-3/bin/../lib/gcc/riscv-none-elf/14.2.0/../../../../riscv-none-elf/bin/ld.exe: (.text+0x90): undefined reference to `__TRAP_TEXT_START__'
+      collect2.exe: error: ld returned 1 exit status
+      
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "C:/ST/STM32CubeCLT_1.16.0/CMake/share/cmake-3.28/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "C:/ST/STM32CubeCLT_1.16.0/CMake/share/cmake-3.28/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "C:/ST/STM32CubeCLT_1.16.0/CMake/share/cmake-3.28/Modules/CMakeDetermineCCompiler.cmake:123 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:2 (project)"
+    message: |
+      Compiling the C compiler identification source file "CMakeCCompilerId.c" succeeded.
+      Compiler: T:/Downloads/xpack-riscv-none-elf-gcc-14.2.0-3-win32-x64/xpack-riscv-none-elf-gcc-14.2.0-3/bin/riscv-none-elf-gcc.exe 
+      Build flags: 
+      Id flags: -c 
+      
+      The output was:
+      0
+      
+      
+      Compilation of the C compiler identification source "CMakeCCompilerId.c" produced "CMakeCCompilerId.o"
+      
+      The C compiler identification is GNU, found in:
+        T:/VSC/mik/mik_build/build/Debug/CMakeFiles/3.28.1/CompilerIdC/CMakeCCompilerId.o
+      
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "C:/ST/STM32CubeCLT_1.16.0/CMake/share/cmake-3.28/Modules/CMakeDetermineCompilerABI.cmake:57 (try_compile)"
+      - "C:/ST/STM32CubeCLT_1.16.0/CMake/share/cmake-3.28/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:2 (project)"
+    checks:
+      - "Detecting C compiler ABI info"
+    directories:
+      source: "T:/VSC/mik/mik_build/build/Debug/CMakeFiles/CMakeScratch/TryCompile-7oko5c"
+      binary: "T:/VSC/mik/mik_build/build/Debug/CMakeFiles/CMakeScratch/TryCompile-7oko5c"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+    buildResult:
+      variable: "CMAKE_C_ABI_COMPILED"
+      cached: true
+      stdout: |
+        Change Dir: 'T:/VSC/mik/mik_build/build/Debug/CMakeFiles/CMakeScratch/TryCompile-7oko5c'
+        
+        Run Build Command(s): C:/ST/STM32CubeCLT_1.16.0/Ninja/bin/ninja.exe -v cmTC_33738
+        [1/2] T:\\Downloads\\xpack-riscv-none-elf-gcc-14.2.0-3-win32-x64\\xpack-riscv-none-elf-gcc-14.2.0-3\\bin\\riscv-none-elf-gcc.exe   -v -o CMakeFiles/cmTC_33738.dir/CMakeCCompilerABI.c.obj -c C:/ST/STM32CubeCLT_1.16.0/CMake/share/cmake-3.28/Modules/CMakeCCompilerABI.c
+        Using built-in specs.
+        COLLECT_GCC=T:\\Downloads\\xpack-riscv-none-elf-gcc-14.2.0-3-win32-x64\\xpack-riscv-none-elf-gcc-14.2.0-3\\bin\\riscv-none-elf-gcc.exe
+        Target: riscv-none-elf
+        Configured with: /__w/riscv-none-elf-gcc-xpack/riscv-none-elf-gcc-xpack/build-assets/build/win32-x64/sources/gcc-14.2.0/configure --prefix=/__w/riscv-none-elf-gcc-xpack/riscv-none-elf-gcc-xpack/build-assets/build/win32-x64/application --with-sysroot=/__w/riscv-none-elf-gcc-xpack/riscv-none-elf-gcc-xpack/build-assets/build/win32-x64/application/riscv-none-elf --with-native-system-header-dir=/include --infodir=/__w/riscv-none-elf-gcc-xpack/riscv-none-elf-gcc-xpack/build-assets/build/win32-x64/x86_64-w64-mingw32/install/share/info --mandir=/__w/riscv-none-elf-gcc-xpack/riscv-none-elf-gcc-xpack/build-assets/build/win32-x64/x86_64-w64-mingw32/install/share/man --htmldir=/__w/riscv-none-elf-gcc-xpack/riscv-none-elf-gcc-xpack/build-assets/build/win32-x64/x86_64-w64-mingw32/install/share/html --pdfdir=/__w/riscv-none-elf-gcc-xpack/riscv-none-elf-gcc-xpack/build-assets/build/win32-x64/x86_64-w64-mingw32/install/share/pdf --build=x86_64-pc-linux-gnu --host=x86_64-w64-mingw32 --target=riscv-none-elf --disable-nls --disable-shared --disable-threads --disable-tls --enable-checking=release --enable-languages=c,c++ --enable-mingw-wildcard --with-gmp=/__w/riscv-none-elf-gcc-xpack/riscv-none-elf-gcc-xpack/build-assets/build/win32-x64/x86_64-w64-mingw32/install --with-newlib --with-pkgversion='xPack GNU RISC-V Embedded GCC x86_64' --with-gnu-as --with-gnu-ld --with-system-zlib --with-abi=ilp32 --with-arch=rv32imac --enable-multilib
+        Thread model: single
+        Supported LTO compression algorithms: zlib zstd
+        gcc version 14.2.0 (xPack GNU RISC-V Embedded GCC x86_64) 
+        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_33738.dir/CMakeCCompilerABI.c.obj' '-c' '-march=rv32imac' '-mabi=ilp32' '-misa-spec=20191213' '-march=rv32imac' '-dumpdir' 'CMakeFiles/cmTC_33738.dir/'
+         T:/Downloads/xpack-riscv-none-elf-gcc-14.2.0-3-win32-x64/xpack-riscv-none-elf-gcc-14.2.0-3/bin/../libexec/gcc/riscv-none-elf/14.2.0/cc1.exe -quiet -v -imultilib . -iprefix T:/Downloads/xpack-riscv-none-elf-gcc-14.2.0-3-win32-x64/xpack-riscv-none-elf-gcc-14.2.0-3/bin/../lib/gcc/riscv-none-elf/14.2.0/ -isysroot T:/Downloads/xpack-riscv-none-elf-gcc-14.2.0-3-win32-x64/xpack-riscv-none-elf-gcc-14.2.0-3/bin/../riscv-none-elf C:/ST/STM32CubeCLT_1.16.0/CMake/share/cmake-3.28/Modules/CMakeCCompilerABI.c -quiet -dumpdir CMakeFiles/cmTC_33738.dir/ -dumpbase CMakeCCompilerABI.c.c -dumpbase-ext .c -march=rv32imac -mabi=ilp32 -misa-spec=20191213 -march=rv32imac -version -o C:\\Users\\User\\AppData\\Local\\Temp\\ccXhGQry.s
+        GNU C17 (xPack GNU RISC-V Embedded GCC x86_64) version 14.2.0 (riscv-none-elf)
+        	compiled by GNU C version 13.2.0, GMP version 6.3.0, MPFR version 4.2.1, MPC version 1.3.1, isl version isl-0.26-GMP
+        
+        GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
+        ignoring duplicate directory "T:/Downloads/xpack-riscv-none-elf-gcc-14.2.0-3-win32-x64/xpack-riscv-none-elf-gcc-14.2.0-3/lib/gcc/../../lib/gcc/riscv-none-elf/14.2.0/include"
+        ignoring nonexistent directory "T:/Downloads/xpack-riscv-none-elf-gcc-14.2.0-3-win32-x64/xpack-riscv-none-elf-gcc-14.2.0-3/bin/../riscv-none-elf/__w/riscv-none-elf-gcc-xpack/riscv-none-elf-gcc-xpack/build-assets/build/win32-x64/application/lib/gcc/riscv-none-elf/14.2.0/../../../../include"
+        ignoring duplicate directory "T:/Downloads/xpack-riscv-none-elf-gcc-14.2.0-3-win32-x64/xpack-riscv-none-elf-gcc-14.2.0-3/lib/gcc/../../lib/gcc/riscv-none-elf/14.2.0/include-fixed"
+        ignoring duplicate directory "T:/Downloads/xpack-riscv-none-elf-gcc-14.2.0-3-win32-x64/xpack-riscv-none-elf-gcc-14.2.0-3/lib/gcc/../../lib/gcc/riscv-none-elf/14.2.0/../../../../riscv-none-elf/include"
+        ignoring duplicate directory "T:/Downloads/xpack-riscv-none-elf-gcc-14.2.0-3-win32-x64/xpack-riscv-none-elf-gcc-14.2.0-3/bin/../riscv-none-elf/include"
+        #include "..." search starts here:
+        #include <...> search starts here:
+         T:/Downloads/xpack-riscv-none-elf-gcc-14.2.0-3-win32-x64/xpack-riscv-none-elf-gcc-14.2.0-3/bin/../lib/gcc/riscv-none-elf/14.2.0/include
+         T:/Downloads/xpack-riscv-none-elf-gcc-14.2.0-3-win32-x64/xpack-riscv-none-elf-gcc-14.2.0-3/bin/../lib/gcc/riscv-none-elf/14.2.0/include-fixed
+         T:/Downloads/xpack-riscv-none-elf-gcc-14.2.0-3-win32-x64/xpack-riscv-none-elf-gcc-14.2.0-3/bin/../lib/gcc/riscv-none-elf/14.2.0/../../../../riscv-none-elf/include
+        End of search list.
+        Compiler executable checksum: 2f1a78d7afddc4ab7d46b6a2d491a9e6
+        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_33738.dir/CMakeCCompilerABI.c.obj' '-c' '-march=rv32imac' '-mabi=ilp32' '-misa-spec=20191213' '-march=rv32imac' '-dumpdir' 'CMakeFiles/cmTC_33738.dir/'
+         T:/Downloads/xpack-riscv-none-elf-gcc-14.2.0-3-win32-x64/xpack-riscv-none-elf-gcc-14.2.0-3/bin/../lib/gcc/riscv-none-elf/14.2.0/../../../../riscv-none-elf/bin/as.exe -v --traditional-format -march=rv32imac -march=rv32imac -mabi=ilp32 -misa-spec=20191213 -o CMakeFiles/cmTC_33738.dir/CMakeCCompilerABI.c.obj C:\\Users\\User\\AppData\\Local\\Temp\\ccXhGQry.s
+        GNU assembler version 2.43.1 (riscv-none-elf) using BFD version (xPack GNU RISC-V Embedded GCC x86_64) 2.43.1
+        COMPILER_PATH=T:/Downloads/xpack-riscv-none-elf-gcc-14.2.0-3-win32-x64/xpack-riscv-none-elf-gcc-14.2.0-3/bin/../libexec/gcc/riscv-none-elf/14.2.0/;T:/Downloads/xpack-riscv-none-elf-gcc-14.2.0-3-win32-x64/xpack-riscv-none-elf-gcc-14.2.0-3/bin/../libexec/gcc/;T:/Downloads/xpack-riscv-none-elf-gcc-14.2.0-3-win32-x64/xpack-riscv-none-elf-gcc-14.2.0-3/bin/../lib/gcc/riscv-none-elf/14.2.0/../../../../riscv-none-elf/bin/
+        LIBRARY_PATH=T:/Downloads/xpack-riscv-none-elf-gcc-14.2.0-3-win32-x64/xpack-riscv-none-elf-gcc-14.2.0-3/bin/../lib/gcc/riscv-none-elf/14.2.0/;T:/Downloads/xpack-riscv-none-elf-gcc-14.2.0-3-win32-x64/xpack-riscv-none-elf-gcc-14.2.0-3/bin/../lib/gcc/;T:/Downloads/xpack-riscv-none-elf-gcc-14.2.0-3-win32-x64/xpack-riscv-none-elf-gcc-14.2.0-3/bin/../lib/gcc/riscv-none-elf/14.2.0/../../../../riscv-none-elf/lib/;T:/Downloads/xpack-riscv-none-elf-gcc-14.2.0-3-win32-x64/xpack-riscv-none-elf-gcc-14.2.0-3/bin/../riscv-none-elf/lib/\x0d
+        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_33738.dir/CMakeCCompilerABI.c.obj' '-c' '-march=rv32imac' '-mabi=ilp32' '-misa-spec=20191213' '-march=rv32imac' '-dumpdir' 'CMakeFiles/cmTC_33738.dir/CMakeCCompilerABI.c.'\x0d
+        [2/2] C:\\Windows\\system32\\cmd.exe /C "cd . && C:\\ST\\STM32CubeCLT_1.16.0\\CMake\\bin\\cmake.exe -E rm -f libcmTC_33738.a && T:\\Downloads\\xpack-riscv-none-elf-gcc-14.2.0-3-win32-x64\\xpack-riscv-none-elf-gcc-14.2.0-3\\bin\\riscv-none-elf-ar.exe qc libcmTC_33738.a  CMakeFiles/cmTC_33738.dir/CMakeCCompilerABI.c.obj && T:\\Downloads\\xpack-riscv-none-elf-gcc-14.2.0-3-win32-x64\\xpack-riscv-none-elf-gcc-14.2.0-3\\bin\\riscv-none-elf-ranlib.exe libcmTC_33738.a && cd ."
+        
+      exitCode: 0
+  -
+    kind: "message-v1"
+    backtrace:
+      - "C:/ST/STM32CubeCLT_1.16.0/CMake/share/cmake-3.28/Modules/CMakeDetermineCompilerABI.cmake:127 (message)"
+      - "C:/ST/STM32CubeCLT_1.16.0/CMake/share/cmake-3.28/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:2 (project)"
+    message: |
+      Parsed C implicit include dir info: rv=done
+        found start of include info
+        found start of implicit include info
+          add: [T:/Downloads/xpack-riscv-none-elf-gcc-14.2.0-3-win32-x64/xpack-riscv-none-elf-gcc-14.2.0-3/bin/../lib/gcc/riscv-none-elf/14.2.0/include]
+          add: [T:/Downloads/xpack-riscv-none-elf-gcc-14.2.0-3-win32-x64/xpack-riscv-none-elf-gcc-14.2.0-3/bin/../lib/gcc/riscv-none-elf/14.2.0/include-fixed]
+          add: [T:/Downloads/xpack-riscv-none-elf-gcc-14.2.0-3-win32-x64/xpack-riscv-none-elf-gcc-14.2.0-3/bin/../lib/gcc/riscv-none-elf/14.2.0/../../../../riscv-none-elf/include]
+        end of search list found
+        collapse include dir [T:/Downloads/xpack-riscv-none-elf-gcc-14.2.0-3-win32-x64/xpack-riscv-none-elf-gcc-14.2.0-3/bin/../lib/gcc/riscv-none-elf/14.2.0/include] ==> [T:/Downloads/xpack-riscv-none-elf-gcc-14.2.0-3-win32-x64/xpack-riscv-none-elf-gcc-14.2.0-3/lib/gcc/riscv-none-elf/14.2.0/include]
+        collapse include dir [T:/Downloads/xpack-riscv-none-elf-gcc-14.2.0-3-win32-x64/xpack-riscv-none-elf-gcc-14.2.0-3/bin/../lib/gcc/riscv-none-elf/14.2.0/include-fixed] ==> [T:/Downloads/xpack-riscv-none-elf-gcc-14.2.0-3-win32-x64/xpack-riscv-none-elf-gcc-14.2.0-3/lib/gcc/riscv-none-elf/14.2.0/include-fixed]
+        collapse include dir [T:/Downloads/xpack-riscv-none-elf-gcc-14.2.0-3-win32-x64/xpack-riscv-none-elf-gcc-14.2.0-3/bin/../lib/gcc/riscv-none-elf/14.2.0/../../../../riscv-none-elf/include] ==> [T:/Downloads/xpack-riscv-none-elf-gcc-14.2.0-3-win32-x64/xpack-riscv-none-elf-gcc-14.2.0-3/riscv-none-elf/include]
+        implicit include dirs: [T:/Downloads/xpack-riscv-none-elf-gcc-14.2.0-3-win32-x64/xpack-riscv-none-elf-gcc-14.2.0-3/lib/gcc/riscv-none-elf/14.2.0/include;T:/Downloads/xpack-riscv-none-elf-gcc-14.2.0-3-win32-x64/xpack-riscv-none-elf-gcc-14.2.0-3/lib/gcc/riscv-none-elf/14.2.0/include-fixed;T:/Downloads/xpack-riscv-none-elf-gcc-14.2.0-3-win32-x64/xpack-riscv-none-elf-gcc-14.2.0-3/riscv-none-elf/include]
+      
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "C:/ST/STM32CubeCLT_1.16.0/CMake/share/cmake-3.28/Modules/CMakeDetermineCompilerABI.cmake:159 (message)"
+      - "C:/ST/STM32CubeCLT_1.16.0/CMake/share/cmake-3.28/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:2 (project)"
+    message: |
+      Parsed C implicit link information:
+        link line regex: [^( *|.*[/\\])(riscv-none-elf-ld\\.exe|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\\]+-)?ld|collect2)[^/\\]*( |$)]
+        ignore line: [Change Dir: 'T:/VSC/mik/mik_build/build/Debug/CMakeFiles/CMakeScratch/TryCompile-7oko5c']
+        ignore line: []
+        ignore line: [Run Build Command(s): C:/ST/STM32CubeCLT_1.16.0/Ninja/bin/ninja.exe -v cmTC_33738]
+        ignore line: [[1/2] T:\\Downloads\\xpack-riscv-none-elf-gcc-14.2.0-3-win32-x64\\xpack-riscv-none-elf-gcc-14.2.0-3\\bin\\riscv-none-elf-gcc.exe   -v -o CMakeFiles/cmTC_33738.dir/CMakeCCompilerABI.c.obj -c C:/ST/STM32CubeCLT_1.16.0/CMake/share/cmake-3.28/Modules/CMakeCCompilerABI.c]
+        ignore line: [Using built-in specs.]
+        ignore line: [COLLECT_GCC=T:\\Downloads\\xpack-riscv-none-elf-gcc-14.2.0-3-win32-x64\\xpack-riscv-none-elf-gcc-14.2.0-3\\bin\\riscv-none-elf-gcc.exe]
+        ignore line: [Target: riscv-none-elf]
+        ignore line: [Configured with: /__w/riscv-none-elf-gcc-xpack/riscv-none-elf-gcc-xpack/build-assets/build/win32-x64/sources/gcc-14.2.0/configure --prefix=/__w/riscv-none-elf-gcc-xpack/riscv-none-elf-gcc-xpack/build-assets/build/win32-x64/application --with-sysroot=/__w/riscv-none-elf-gcc-xpack/riscv-none-elf-gcc-xpack/build-assets/build/win32-x64/application/riscv-none-elf --with-native-system-header-dir=/include --infodir=/__w/riscv-none-elf-gcc-xpack/riscv-none-elf-gcc-xpack/build-assets/build/win32-x64/x86_64-w64-mingw32/install/share/info --mandir=/__w/riscv-none-elf-gcc-xpack/riscv-none-elf-gcc-xpack/build-assets/build/win32-x64/x86_64-w64-mingw32/install/share/man --htmldir=/__w/riscv-none-elf-gcc-xpack/riscv-none-elf-gcc-xpack/build-assets/build/win32-x64/x86_64-w64-mingw32/install/share/html --pdfdir=/__w/riscv-none-elf-gcc-xpack/riscv-none-elf-gcc-xpack/build-assets/build/win32-x64/x86_64-w64-mingw32/install/share/pdf --build=x86_64-pc-linux-gnu --host=x86_64-w64-mingw32 --target=riscv-none-elf --disable-nls --disable-shared --disable-threads --disable-tls --enable-checking=release --enable-languages=c,c++ --enable-mingw-wildcard --with-gmp=/__w/riscv-none-elf-gcc-xpack/riscv-none-elf-gcc-xpack/build-assets/build/win32-x64/x86_64-w64-mingw32/install --with-newlib --with-pkgversion='xPack GNU RISC-V Embedded GCC x86_64' --with-gnu-as --with-gnu-ld --with-system-zlib --with-abi=ilp32 --with-arch=rv32imac --enable-multilib]
+        ignore line: [Thread model: single]
+        ignore line: [Supported LTO compression algorithms: zlib zstd]
+        ignore line: [gcc version 14.2.0 (xPack GNU RISC-V Embedded GCC x86_64) ]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_33738.dir/CMakeCCompilerABI.c.obj' '-c' '-march=rv32imac' '-mabi=ilp32' '-misa-spec=20191213' '-march=rv32imac' '-dumpdir' 'CMakeFiles/cmTC_33738.dir/']
+        ignore line: [ T:/Downloads/xpack-riscv-none-elf-gcc-14.2.0-3-win32-x64/xpack-riscv-none-elf-gcc-14.2.0-3/bin/../libexec/gcc/riscv-none-elf/14.2.0/cc1.exe -quiet -v -imultilib . -iprefix T:/Downloads/xpack-riscv-none-elf-gcc-14.2.0-3-win32-x64/xpack-riscv-none-elf-gcc-14.2.0-3/bin/../lib/gcc/riscv-none-elf/14.2.0/ -isysroot T:/Downloads/xpack-riscv-none-elf-gcc-14.2.0-3-win32-x64/xpack-riscv-none-elf-gcc-14.2.0-3/bin/../riscv-none-elf C:/ST/STM32CubeCLT_1.16.0/CMake/share/cmake-3.28/Modules/CMakeCCompilerABI.c -quiet -dumpdir CMakeFiles/cmTC_33738.dir/ -dumpbase CMakeCCompilerABI.c.c -dumpbase-ext .c -march=rv32imac -mabi=ilp32 -misa-spec=20191213 -march=rv32imac -version -o C:\\Users\\User\\AppData\\Local\\Temp\\ccXhGQry.s]
+        ignore line: [GNU C17 (xPack GNU RISC-V Embedded GCC x86_64) version 14.2.0 (riscv-none-elf)]
+        ignore line: [	compiled by GNU C version 13.2.0  GMP version 6.3.0  MPFR version 4.2.1  MPC version 1.3.1  isl version isl-0.26-GMP]
+        ignore line: []
+        ignore line: [GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072]
+        ignore line: [ignoring duplicate directory "T:/Downloads/xpack-riscv-none-elf-gcc-14.2.0-3-win32-x64/xpack-riscv-none-elf-gcc-14.2.0-3/lib/gcc/../../lib/gcc/riscv-none-elf/14.2.0/include"]
+        ignore line: [ignoring nonexistent directory "T:/Downloads/xpack-riscv-none-elf-gcc-14.2.0-3-win32-x64/xpack-riscv-none-elf-gcc-14.2.0-3/bin/../riscv-none-elf/__w/riscv-none-elf-gcc-xpack/riscv-none-elf-gcc-xpack/build-assets/build/win32-x64/application/lib/gcc/riscv-none-elf/14.2.0/../../../../include"]
+        ignore line: [ignoring duplicate directory "T:/Downloads/xpack-riscv-none-elf-gcc-14.2.0-3-win32-x64/xpack-riscv-none-elf-gcc-14.2.0-3/lib/gcc/../../lib/gcc/riscv-none-elf/14.2.0/include-fixed"]
+        ignore line: [ignoring duplicate directory "T:/Downloads/xpack-riscv-none-elf-gcc-14.2.0-3-win32-x64/xpack-riscv-none-elf-gcc-14.2.0-3/lib/gcc/../../lib/gcc/riscv-none-elf/14.2.0/../../../../riscv-none-elf/include"]
+        ignore line: [ignoring duplicate directory "T:/Downloads/xpack-riscv-none-elf-gcc-14.2.0-3-win32-x64/xpack-riscv-none-elf-gcc-14.2.0-3/bin/../riscv-none-elf/include"]
+        ignore line: [#include "..." search starts here:]
+        ignore line: [#include <...> search starts here:]
+        ignore line: [ T:/Downloads/xpack-riscv-none-elf-gcc-14.2.0-3-win32-x64/xpack-riscv-none-elf-gcc-14.2.0-3/bin/../lib/gcc/riscv-none-elf/14.2.0/include]
+        ignore line: [ T:/Downloads/xpack-riscv-none-elf-gcc-14.2.0-3-win32-x64/xpack-riscv-none-elf-gcc-14.2.0-3/bin/../lib/gcc/riscv-none-elf/14.2.0/include-fixed]
+        ignore line: [ T:/Downloads/xpack-riscv-none-elf-gcc-14.2.0-3-win32-x64/xpack-riscv-none-elf-gcc-14.2.0-3/bin/../lib/gcc/riscv-none-elf/14.2.0/../../../../riscv-none-elf/include]
+        ignore line: [End of search list.]
+        ignore line: [Compiler executable checksum: 2f1a78d7afddc4ab7d46b6a2d491a9e6]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_33738.dir/CMakeCCompilerABI.c.obj' '-c' '-march=rv32imac' '-mabi=ilp32' '-misa-spec=20191213' '-march=rv32imac' '-dumpdir' 'CMakeFiles/cmTC_33738.dir/']
+        ignore line: [ T:/Downloads/xpack-riscv-none-elf-gcc-14.2.0-3-win32-x64/xpack-riscv-none-elf-gcc-14.2.0-3/bin/../lib/gcc/riscv-none-elf/14.2.0/../../../../riscv-none-elf/bin/as.exe -v --traditional-format -march=rv32imac -march=rv32imac -mabi=ilp32 -misa-spec=20191213 -o CMakeFiles/cmTC_33738.dir/CMakeCCompilerABI.c.obj C:\\Users\\User\\AppData\\Local\\Temp\\ccXhGQry.s]
+        ignore line: [GNU assembler version 2.43.1 (riscv-none-elf) using BFD version (xPack GNU RISC-V Embedded GCC x86_64) 2.43.1]
+        ignore line: [COMPILER_PATH=T:/Downloads/xpack-riscv-none-elf-gcc-14.2.0-3-win32-x64/xpack-riscv-none-elf-gcc-14.2.0-3/bin/../libexec/gcc/riscv-none-elf/14.2.0/]
+        ignore line: [T:/Downloads/xpack-riscv-none-elf-gcc-14.2.0-3-win32-x64/xpack-riscv-none-elf-gcc-14.2.0-3/bin/../libexec/gcc/]
+        ignore line: [T:/Downloads/xpack-riscv-none-elf-gcc-14.2.0-3-win32-x64/xpack-riscv-none-elf-gcc-14.2.0-3/bin/../lib/gcc/riscv-none-elf/14.2.0/../../../../riscv-none-elf/bin/]
+        ignore line: [LIBRARY_PATH=T:/Downloads/xpack-riscv-none-elf-gcc-14.2.0-3-win32-x64/xpack-riscv-none-elf-gcc-14.2.0-3/bin/../lib/gcc/riscv-none-elf/14.2.0/]
+        ignore line: [T:/Downloads/xpack-riscv-none-elf-gcc-14.2.0-3-win32-x64/xpack-riscv-none-elf-gcc-14.2.0-3/bin/../lib/gcc/]
+        ignore line: [T:/Downloads/xpack-riscv-none-elf-gcc-14.2.0-3-win32-x64/xpack-riscv-none-elf-gcc-14.2.0-3/bin/../lib/gcc/riscv-none-elf/14.2.0/../../../../riscv-none-elf/lib/]
+        ignore line: [T:/Downloads/xpack-riscv-none-elf-gcc-14.2.0-3-win32-x64/xpack-riscv-none-elf-gcc-14.2.0-3/bin/../riscv-none-elf/lib/\x0d]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_33738.dir/CMakeCCompilerABI.c.obj' '-c' '-march=rv32imac' '-mabi=ilp32' '-misa-spec=20191213' '-march=rv32imac' '-dumpdir' 'CMakeFiles/cmTC_33738.dir/CMakeCCompilerABI.c.'\x0d]
+        ignore line: [[2/2] C:\\Windows\\system32\\cmd.exe /C "cd . && C:\\ST\\STM32CubeCLT_1.16.0\\CMake\\bin\\cmake.exe -E rm -f libcmTC_33738.a && T:\\Downloads\\xpack-riscv-none-elf-gcc-14.2.0-3-win32-x64\\xpack-riscv-none-elf-gcc-14.2.0-3\\bin\\riscv-none-elf-ar.exe qc libcmTC_33738.a  CMakeFiles/cmTC_33738.dir/CMakeCCompilerABI.c.obj && T:\\Downloads\\xpack-riscv-none-elf-gcc-14.2.0-3-win32-x64\\xpack-riscv-none-elf-gcc-14.2.0-3\\bin\\riscv-none-elf-ranlib.exe libcmTC_33738.a && cd ."]
+        ignore line: []
+        ignore line: []
+        implicit libs: []
+        implicit objs: []
+        implicit dirs: []
+        implicit fwks: []
+      
+      
+...
