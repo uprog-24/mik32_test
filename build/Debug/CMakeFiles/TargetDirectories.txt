@@ -1,4 +1,0 @@
-T:/VSC/mik/mik_build/build/Debug/CMakeFiles/mik_build.dir
-T:/VSC/mik/mik_build/build/Debug/CMakeFiles/copy_outputs.dir
-T:/VSC/mik/mik_build/build/Debug/CMakeFiles/edit_cache.dir
-T:/VSC/mik/mik_build/build/Debug/CMakeFiles/rebuild_cache.dir
