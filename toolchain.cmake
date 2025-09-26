@@ -3,6 +3,7 @@ set(CMAKE_SYSTEM_PROCESSOR riscv) # Определяем процессор
 
 # Настройка префикса компилятора
 set(TOOLCHAIN_PREFIX "T:/Downloads/xpack-riscv-none-elf-gcc-14.2.0-3-win32-x64/xpack-riscv-none-elf-gcc-14.2.0-3/bin/riscv-none-elf-")
+# set(TOOLCHAIN_PREFIX "T:/xpack-riscv-none-elf-gcc-14.2.0-3/bin/riscv-none-elf-")
 
 # Назначение компиляторов (флаги компиляции отдельно)
 set(CMAKE_C_COMPILER "${TOOLCHAIN_PREFIX}gcc.exe")

@@ -45,7 +45,10 @@ set(PROJECT_INCLUDE_DIRECTORIES
 )
 
 set(PROJECT_SOURCES
-    src/main.c
+    # src/main.c
+    # src/timer_16_blink_irq.c
+    src/timer_16_pwm_led_irq.c
+    # src/usart.c
 )
 
 file(GLOB_RECURSE HAL_SRC

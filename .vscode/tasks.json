@@ -68,12 +68,14 @@
       "command": "C:/Users/User/AppData/Local/Programs/Python/Python313/python.exe",
       "args": [
         "C:/Users/User/.platformio/packages/tool-mik32-uploader/mik32_upload.py",
-        "build/${config:projectName}.hex",
+        "build/${config:projectName}.bin",
         "--run-openocd",
         "--openocd-exec=C:/Users/User/.platformio/packages/tool-openocd/bin/openocd.exe",
         "--openocd-interface=C:/Users/User/.platformio/packages/tool-mik32-uploader/openocd-scripts/interface/start-link.cfg",
         "--openocd-target=C:/Users/User/.platformio/packages/tool-mik32-uploader/openocd-scripts/target/mik32.cfg",
-        "--adapter-speed=3200"
+        "--adapter-speed=3200",
+        "--boot-mode", // режим загрузки для bin-файлов
+        "spifi" // во внешнюю falsh-память
       ],
       "options": {
         "cwd": "${workspaceFolder}",
@@ -87,9 +89,36 @@
     },
 
     {
-      "label": "Launch OpenOCD MIK32",
+      "label": "Check JTAG",
       "type": "shell",
-      "command": "openocd",
+      "command": "C:/Users/User/.platformio/packages/tool-openocd/bin/openocd.exe",
+      "args": [
+        "-s",
+        "C:/Users/User/.platformio/packages/tool-mik32-uploader/openocd-scripts",
+        "-f",
+        "C:/Users/User/.platformio/packages/tool-mik32-uploader/openocd-scripts/interface/start-link.cfg",
+        "-f",
+        "C:/Users/User/.platformio/packages/tool-mik32-uploader/openocd-scripts/target/mik32.cfg",
+        "-c",
+        "init; scan_chain; exit"
+      ],
+      "options": {
+        "cwd": "${workspaceFolder}",
+        "statusbar": {
+          "color": "#3ea277",
+          "label": "$(pass-filled) CheckJTAG",
+          "detail": "Download binary file"
+        }
+      },
+      "problemMatcher": []
+    },
+
+    {
+      "label": "StartGDB",
+      "type": "shell",
+      "hide": true,
+      // "command": "openocd",
+      "command": "C:/Users/User/.platformio/packages/tool-openocd/bin/openocd.exe",
       "args": [
         "-s",
         "C:/Users/User/.platformio/packages/tool-mik32-uploader/openocd-scripts",
@@ -100,6 +129,7 @@
         "-c",
         "init; halt"
       ],
+      "isBackground": true,
       "problemMatcher": {
         "owner": "custom",
         "pattern": [
@@ -113,51 +143,31 @@
         "background": {
           "activeOnStart": true,
           "beginsPattern": "Info : Listening on port 3333 for gdb connections",
-          "endsPattern": "(((READY)))"
+          "endsPattern": "Info : Listening on port 6666 for tcl connections"
         }
       },
-      "isBackground": true,
+
       "presentation": {
         "echo": true,
         "reveal": "always",
         "focus": false,
-        "panel": "new"
+        "panel": "dedicated"
       }
     },
 
-    // {
-    // // Сброс устройства
-    //   "label": "ResetDevice",
-    //   "type": "shell",
-    //   "command": "python",
-    //   "args": [
-    //     "C:/Users/User/.platformio/packages/tool-mik32-uploader/reset_flash.py"
-    //   ],
-    //   "group": "build",
-    //   "presentation": {
-    //     "echo": true,
-    //     "reveal": "always",
-    //     "panel": "shared"
-    //   },
-    //   "problemMatcher": []
-    // },
-
-    // {
-    //   // Очистка флеш-памяти
-    //   "label": "EraseFlash",
-    //   "type": "shell",
-    //   "command": "python",
-    //   "args": [
-    //     "C:/Users/User/.platformio/packages/tool-mik32-uploader/erase_flash.py"
-    //   ],
-    //   "group": "build",
-    //   "presentation": {
-    //     "echo": true,
-    //     "reveal": "always",
-    //     "panel": "shared"
-    //   },
-    //   "problemMatcher": []
-    // },
+    {
+      "label": "Close GDB connection",
+      "type": "shell",
+      "hide": true,
+      "command": "T:/xpack-riscv-none-elf-gcc-14.2.0-3/bin/riscv-none-elf-gdb.exe",
+      "args": ["--batch", "-ex", "disconnect", "-ex", "quit"],
+      "presentation": {
+        "echo": true,
+        "reveal": "always",
+        "focus": false,
+        "panel": "shared"
+      }
+    },
 
     {
       // Удаление папки сборки build

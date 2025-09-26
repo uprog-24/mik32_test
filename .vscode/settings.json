@@ -3,7 +3,18 @@
   "files.associations": {
     "mik32_hal_pcc.h": "c",
     "mik32_hal_timer16.h": "c",
-    "timer16.h": "c"
+    "timer16.h": "c",
+    "mik32_hal.h": "c",
+    "mik32_hal_gpio.h": "c",
+    "mik32_memory_map.h": "c",
+    "mik32_hal_scr1_timer.h": "c",
+    "uart_lib.h": "c",
+    "dma_config.h": "c",
+    "mik32_hal_usart.h": "c",
+    "mik32_hal_irq.h": "c",
+    "mik32_hal_timer32.h": "c",
+    "power_manager.h": "c",
+    "timer32.h": "c"
   },
   "python-envs.defaultEnvManager": "ms-python.python:system",
   "python-envs.pythonProjects": []
